@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 @layer base {
     * {
@@ -8,10 +9,18 @@
     body {
         color: white;
         background-color: black;
-        font-family: Verdana,Geneva,Tahoma, sans-serif;
+        font-family: 'Inter', sans-serif;
     }
     html {
         scroll-behavior:smooth;
     }
 
+}
+@layer utilities {
+    .text-gradient {
+        background: linear-gradient(135deg, rgb(37,99,235) 0%, rgb(249,115,22) 100% );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
